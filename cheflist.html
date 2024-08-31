@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dashboard View</title>
+
+	<link rel="icon" type="image/x-icon" href="fevikon.png"></link>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+body{
+	background-color:#ECFCF9;
+}
+
+/*Side Navigation CSS start */
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+    padding-top: 73px;
+}
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/*Side Navigation CSS END */
+
+.topnav {
+  overflow: hidden;
+  background-color: #111;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  float: right;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/*main dashboart CSS*/
+
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+}
+
+.container{
+	display:flex;
+	justify-content:center; 
+	flex-wrap:wrap;
+}
+
+
+.container{
+	display:flex;
+	margin-top:30px;
+        justify-content: center; 
+}
+
+
+.cheflist th, td{
+	text-align:center;
+	border:2px solid black;
+	padding:10px;
+}
+
+table {
+	border-collapse: collapse;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {background-color: coral;}
+
+
+.backbutton{
+	margin-left:200px;
+	margin-top:25px;
+	margin-right:20px;	
+}
+.backbutton a{
+	border:2px solid black;
+	text-decoration:none;
+	padding:10px;
+	background-color:#34A9FB;
+	color:white;
+	border-radius:10px;
+}
+.backbutton a:hover{
+	background-color:#4C17F9;
+}
+
+.busy{
+	background-color:#f02b2b;
+	color:white;
+	padding:5px;
+	font-size:15px;
+	border:2px solid black;
+	border-radius:5px;
+}
+.free{
+	background-color:#21c424;
+	color:white;
+	padding:5px;
+	font-size:15px;
+	border:2px solid black;
+	border-radius:5px;
+}
+h1{
+	text-align:center;
+}
+
+
+</style>
+
+</head>
+<body style="margin-bottom:200px">
+
+<div class="topnav">
+  <a href="project.html">Logout</a>
+</div>
+
+
+<div class="sidenav">
+  <a href="dashboard.html">Dashboard</a>
+  <a href="totalwaiters.html">Total Waiters</a>
+</div>
+
+<div class="backbutton">
+
+	<a href="dashboard.html"><i class="fa-solid fa-arrow-left"></i> Back To Dashboard </a>
+
+</div>
+
+<h1>Chefs in Hotel</h1>
+
+<div class="container">
+	<table class="cheflist">
+  		<tr>
+    			 <th>Sr.</th>
+   			 <th>Chef Name</th>
+   			 <th>Mobile No.</th>
+    			 <th>Make Dishes</th>
+    			 <th>Shift</th>
+			<th>Action</th>
+  		</tr>
+	
+		<tr>
+			<td>1.</td>
+			<td>Om Patil</td>
+			<td>9503087047</td>
+			<td>Non-Veg Dishes</td>
+			<td>Morning Shift</td>
+			<td><button class="busy">Busy</button></td>
+		</tr>
+
+		<tr>
+			<td>2.</td>
+			<td>Rohan Power</td>
+			<td>9857451235</td>
+			<td>Veg Dishes</td>
+			<td>Morning Shift</td>
+			<td><button class="busy">Busy</button></td>
+
+		</tr>
+
+	
+		<tr>
+			<td>3.</td>
+			<td>Rushi Aswale</td>
+			<td>8956475123</td>
+			<td>Veg Dishes</td>
+			<td>Night Shift</td>
+			<td><button class="free">Free</button></td>
+
+		</tr>
+
+		<tr>
+			<td>4.</td>
+			<td>Digvijay Dinde</td>
+			<td>8459657425</td>
+			<td>Non-Veg Dishes</td>
+			<td>Night Shift</td>
+			<td><button class="free">Free</button></td>
+
+		</tr>
+
+	</table>
+
+	
+</div>
+
+
+   
+</body>
+</html> 

@@ -1,0 +1,215 @@
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+}
+
+nav{
+	text-align:center;
+	font-size:20px;
+  	overflow: hidden;
+	border: 1px solid #e7e7e7;
+	background-color: #f3f3f3;
+	padding:10px 0px 5px 10px;
+}
+
+ul{
+	list-style-type:none;
+}
+li {
+	margin:15px;
+	display: inline;
+	font-size: 20px;
+}
+li a{
+	text-decoration:none;
+}
+li a:hover{
+	color: blue;
+}
+
+.sticky{
+	position:sticky;
+	top:0;
+}
+
+
+.head{
+	background-image:url('https://nextrestaurants.com/wp-content/uploads/2019/10/Restaurant-Instagram-Photography.png');
+color:white;
+	height:500px;
+	background-repeat:no-repeat;
+	background-size:100% 90%;
+	padding:10px 0px 0px 80px;
+	font-size:20px;
+	color:rgba(244, 251, 255, 0.81);
+}
+
+.head h1,h2{
+	font-family:cursive;
+}
+.head h1,p{
+	margin:auto;
+}
+.head ol li a{
+	color:rgba(244, 251, 255, 0.81);
+	line-height: 1.5;
+
+}
+.head a:hover{
+	color:white;
+}
+
+	
+.right{
+	float:right;
+	padding-right:20px;
+}
+.right a{
+	padding-left:15px
+}
+.first{
+	float:left;
+	justify-content:left;
+}
+
+/* About Contents */
+
+.about{
+	display:flex;
+}
+
+.aboutimg{
+	margin:45px 10px 0px 100px;
+	flex:50%
+}
+.aboutcontent{
+	margin:0px 100px 0px 20px;
+	line-height: 1.5;
+	flex:50%;	
+}
+.aboutcontent h1,section{
+	text-align:center;
+	margin:auto;
+}
+.aboutcontent p{
+	font-size:18px;
+	text-align:justify;
+}
+
+
+
+/* Contact US CSS */
+
+
+.banner {
+    text-align: center;
+    background-color: #ffffff;
+    margin: 0 auto;
+}
+ 
+.banner img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Contact form styles */
+.contact-form {
+    padding: 40px 0;
+    margin: 0 10px;
+}
+ 
+.form-container {
+    max-width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+ 
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+ 
+.form-group {
+    margin-bottom: 20px;
+}
+ 
+.form-container label {
+    display:block;
+    font-weight: bold;
+}
+.form-container input, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    resize: vertical;
+}
+.submit-button {
+    padding: 10px 20px;
+    background-color: #0dac30;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+ 
+/* Contact info styles */
+.contact-info {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f7f7f7;
+}
+ 
+.contact-info h2 {
+    margin-bottom: 20px;
+}
+ 
+/* Footer styles */
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+/*Contact us CSS END */
+
+@media screen and (max-width:900px){
+.about{
+		flex-wrap: wrap;
+}
+
+.aboutimg{
+	margin-top:0px;
+	flex:0;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+.aboutcontent{
+	text-align:center;
+	padding-left:70px;
+}
+
+
+div.relative {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  border: 3px solid #73AD21;
+} 
+
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  width: 200px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}

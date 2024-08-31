@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dashboard View</title>
+	<link rel="icon" type="image/x-icon" href="fevikon.png"></link>
+
+<style>
+body{
+	background:url('bgdashboard.jpg') no-repeat;
+ 	background-size: cover;
+	backdrop-filter:blur(10px);
+
+}
+
+/*Side Navigation CSS start */
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+   padding-top: 73px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/*Side Navigation CSS END */
+
+.topnav {
+  overflow: hidden;
+  background-color: #111;
+
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  float: right;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/*main dashboart CSS*/
+
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+}
+
+.container{
+	display:flex;
+	justify-content:center; 
+	flex-wrap:wrap;
+	height:100%;
+
+}
+.card{
+	width:370px;
+	background-color:#f0f0f0;
+	margin:50px;
+	margin:50px 50px 0px 50px;
+	border-radius:15px;
+}
+
+.card-img{
+	height:200px;
+	margin-bottom:15px;
+	background-size:cover;
+	border-radius:15px 15px 0 0;
+}
+
+.img-1{
+	background-image:url('images/emptytable.jpg');
+}
+
+.img-2{
+	background-image:url('images/waiters.jpg');
+}
+
+.img-3{
+	background-image:url('images/chef.jpg');
+}
+
+.img-4{
+	background-image:url('images/dish.png');
+}
+
+
+.card h3,p{
+	padding:5px;
+}
+
+.card a{
+	background-color:black;
+	color:white;
+	padding:12px 15px;
+	text-decoration:none;
+	border-radius:10px;
+	text-align:center; 
+	display:block;
+	margin:20px 50px;
+}
+.card:hover{
+	transform:scale(1.03);
+}
+.contents{
+	padding-left:10px;
+	padding-right:10px;
+}
+.contents h2{
+	text-align:center;
+}
+.price{
+	font-size:17px;
+	text-align:center;
+}
+
+.dish ,tr,td,th {
+	text-align:center;
+	margin-top:50px;
+	padding:5px;
+	border:1px solid black;
+        justify-content: space-between; 
+}
+
+table{
+	width:35%;
+	border-collapse:collapse;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {background-color: coral;}
+
+
+
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="project.html" >Logout</a>
+</div>
+
+
+<div class="sidenav">
+  <a href="dashboard.html">Dashboard</a>
+  <a href="totalwaiters.html">Total Waiters</a>
+</div>
+
+
+<div class="main">
+<div class="container">
+	<div class="card">
+		<div class="card-img img-1"></div>	
+		<div class="contents">
+			<h2>Empty Tables in Hotel</h2>
+  				<a href=""><p class="price">5 Tables are Empty</p></a>
+		</div>	
+	</div>
+
+
+	<div class="card">
+		<div class="card-img img-2"></div>	
+		
+		<div class="contents">
+			<h2>Waiters in Hotel</h2>
+  			<a href="waiters.html"<p class="price">4 Waiters are Working today</p></a>
+		</div>	
+	</div>
+	
+</div>
+
+<div class="container">
+	<div class="card">
+		<div class="card-img img-3"></div>	
+		<div class="contents">
+			<h2>Chefs in Hotel</h2>
+  				<a href="cheflist.html" ><p class="price">3 Chefs in Hotel</p></a>
+		</div>	
+	</div>
+
+	<div class="card">
+		<div class="card-img img-4"></div>	
+		<div class="contents">
+			<h2>All Dishes in Hotel</h2>
+  				<a href="alldish.html" ><p class="price">3 Chefs in Hotel</p></a>
+		</div>	
+	</div>
+	
+</div>
+
+
+</div>
+   
+</body>
+</html> 

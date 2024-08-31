@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dashboard View</title>
+
+	<link rel="icon" type="image/x-icon" href="fevikon.png"></link>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+body{
+	background-color:#ECFCF9;
+}
+
+/*Side Navigation CSS start */
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 73px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/*Side Navigation CSS END */
+
+.topnav {
+  overflow: hidden;
+  background-color: #111;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  float: right;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+/*main dashboart CSS*/
+
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+}
+
+.container{
+	display:flex;
+	justify-content:center; 
+	flex-wrap:wrap;
+}
+
+.backbutton{
+	margin-left:200px;
+	margin-top:25px;
+	margin-right:20px;	
+}
+.backbutton a{
+	border:2px solid black;
+	text-decoration:none;
+	padding:10px;
+	background-color:#34A9FB;
+	color:white;
+	border-radius:10px;
+}
+.backbutton a:hover{
+	background-color:#4C17F9;
+}
+
+
+form{
+    background: linear-gradient(to top left, #9999ff 1%, #cc99ff 98%);
+	margin:20px;
+	padding:1px 0px 25px 30px;
+	font-size:20px;
+	border:2px solid black;
+	border-radius:10px
+}
+.form{
+	display: flex;
+	justify-content: center;
+}
+
+form h3{
+	text-align:center;
+}
+form h1{
+	text-align:center;
+}
+
+.form input{
+	border:0;
+	outline:0;
+}
+input[type=text]{
+	width:90%;
+	padding:5px;
+	font-size:18px;
+}
+input[type=submit]{
+	padding:10px;
+	font-size:20px;
+	border-radius:10px;
+	border:2px solid black;
+
+}
+input[type=reset]{
+	padding:10px;
+	font-size:20px;
+	margin-left:30px;
+	border-radius:10px;
+}
+input[type=reset]{
+	padding:10px;
+	font-size:20px;
+	margin-left:30px;
+	border-radius:10px;
+	border:2px solid black;
+}
+input[type=submit]:hover{
+	background-color:#19e649;
+	color:white;
+
+}
+input[type=reset]:hover{
+	background-color:#f03737;
+	color:white;
+}
+
+
+
+</style>
+</head>
+<body style="margin-bottom:200px">
+
+<div class="topnav">
+  <a href="project.html" >Logout</a>
+</div>
+
+
+<div class="sidenav">
+  <a href="dashboard.html">Dashboard</a>
+  <a href="totalwaiters.html">Total Waiters</a>
+</div>
+
+<div class="backbutton">
+
+	<a href="dashboard.html"><i class="fa-solid fa-arrow-left"></i> Back To Dashboard </a>
+
+</div>
+
+<div class="container">
+
+<div class="form">
+		<form>
+			<h3><ins>Add New Waiter</ins></h3>
+			<label>Sr No:- </label>
+			<input type="text" placeholder="sr no"><br><br>
+
+			<label>Waiter Name :- </label>
+			<input type="text" placeholder="waiter name"><br><br>
+
+			<label>Mobile No. :- </label>
+			<input type="text" placeholder="mobile no"><br><br>
+
+			<label>Email :- </label><br>
+			<input type="text" placeholder="Gmail"><br><br>
+
+			<label>Shift :- </label><br>
+			<input type="text" placeholder="shift"><br><br>
+
+			<label>Gender : -</label>
+			<input type="radio" name="gender" id="male">	
+			<label>Male</label>
+
+			<input type="radio" name="gender" id="female">
+			<label>Female</label><br><br>
+
+			<input type="submit" value="Submit">
+			<input type="reset" value="Reset">
+			<input type="reset" value="Back">
+
+			
+		</form>
+</div>
+
+
+
+</div>
+   
+</body>
+</html> 
